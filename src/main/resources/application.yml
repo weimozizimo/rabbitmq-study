@@ -1,0 +1,18 @@
+server:
+  servlet:
+    context-path: /zimo
+    encoding:
+      charset: UTF-8
+  port: 8083
+spring:
+  rabbitmq:
+    host: 192.168.174.128
+    port: 5672
+    username: guest
+    password: guest
+
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/
+      additional-exclude: WEB-INF/**
